@@ -34,19 +34,25 @@ body/* фон body*/
 
 nav.nav--active
 {  
-   margin-top: 25px;
-   width: 100%;   
+   margin-top: -2px;
+   width: 150px;
+   height: 150px;
+   margin-left: -20px;
+   
+   
 }   
  nav
 {   
     height: 60px;
-    line-height:1;
+    line-height:2;
 }
 
 div.dropdown
 {
     margin-left:  13%;
     margin-top: 1%;
+    border: 1px solid green;
+    background-color: blue;
     
 }
 
@@ -54,6 +60,7 @@ nav form
 {   width: 100%;
     height: 30px;
     font-size: 18px;
+    margin-top: 50px;
 }
 nav form a
 {
@@ -63,47 +70,47 @@ nav form a
 nav div.dropdown 
 {
   position: relative;
-  display: inline-block; 
+   
 }
 
 .dropdown:hover .menu-content
 {
-    background-color:honeydew;
+    background-color:blue;
     color:blue;
     display: block;
     opacity: 1;
 }
 .menu-content {
   display: none;
-  border-radius: 20px 20px 20px 20px;
+ 
   position: absolute;
-  top:-35px;
-  left:-70px;
-  height:  100px;
-  width: 70px;
+  top:0px;
+  left:129px;
+  text-align: left;
+  width: 170px;
+  height: 180px;
+  line-height: 1;
+  border:1px solid grey;
+  
+  
   
   
   
 }
 
 
-div.menu-content__item
-{
-  transform:rotate(-90deg);  
-  vertical-align:middle;
-  
-}
-.menu-content__item a{
-    padding: 1px;
-}
+
+
 
 .menu-content a
 {
-    font-size: 21px;
+    font-size: 17px;
     font-style:normal;
     text-transform:none;
-    vertical-align:top;
-    display: inline-block;
+    transition: opacity 3s;
+    line-height:0.5;
+    left: 10px;
+    
     
     
 }
@@ -123,12 +130,12 @@ nav a,nav span
 }
 nav a:hover
 {
-    color:blue;
-    font-size: 14px;
+    color:white;
+   
     
 }
 nav a{
-    transition: color 5s,font-size 6s;
+    transition: color 5s;
 }
 form
 {
